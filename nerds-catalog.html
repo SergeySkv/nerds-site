@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<title>Catalog</title>
+  </head>
+  <body class="page">
+	<header class="page-header">
+		<div class="page-header__wrap">
+			<div class="page-header__nav clearfix">
+				<a href="nerds-index.html" class="page-header__logo"><img src="img/logo.png"width="139" height="56"  alt="Nerds Logo"></a>
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item"><a href="nerds-index.html" class="nav__link">студия</a></li>
+						<li class="nav__item"><a href="nerds-index.html" class="nav__link">клиенты</a></li>
+						<li class="nav__item"><a href="nerds-catalog.html" class="nav__link nav__link_current">магазин</a></li>
+						<li class="nav__item"><a href="nerds-index.html" class="nav__link">контакты</a></li>
+						<li class="nav__item"><a href="nerds-index.html" class="nav__link cart"><i class="cart__img icon-basket"></i>корзина</a></li>
+					</ul>
+				</nav>	
+			</div>
+			<h1 class="page-header__title">Добро пожаловать в магазин<br> готовых макетов</h1>
+		</div>
+	</header>	
+	<div class="store clearfix">
+		<div class="store__wrap">
+			<div class="store__tuning">
+				<form action="" class="store-form">
+					<h2 class="store-form__title">СТОИМОСТЬ:</h2>
+					<div class="price-scrollbar">
+						<div class="price-scrollbar__scroll">
+						</div>
+						<label class="price-scrollbar__item" for="min-price">ОТ<input class="price-scrollbar__input" type="text" name="" id="min-price"></label>
+						<label class="price-scrollbar__item" for="max-price">ДО<input class="price-scrollbar__input price-scrollbar__input_last" type="text" name="" id="max-price"></label>
+					</div>
+					<h2 class="store-form__title">Сетка:</h2>
+					<ul class="store-form__list">
+						<li class="store-form__line">
+							<input class="store-form__input" type="radio" name="grid" id="adaptive-grid" checked>
+							<label class="store-form__item store-form__item_radio"  for="adaptive-grid">Адаптивная</label>
+						</li>
+						<li class="store-form__line">
+							<input class="store-form__input" type="radio" name="grid" id="fixed-grid">
+							<label class="store-form__item store-form__item_radio" for="fixed-grid">Фиксированная</label>
+						</li>
+						<li class="store-form__line">
+							<input class="store-form__input" type="radio" name="grid" id="gum-grid">
+							<label class="store-form__item store-form__item_radio" for="gum-grid">Резиновая</label>
+						</li>
+					</ul>
+					<h2 class="store-form__title">ОСОБЕННОСТИ:</h2>
+					<ul class="store-form__list">
+						<li class="store-form__line">
+							<input class="store-form__input" type="checkbox" name="features" id="feature-slider" checked disabled>
+							<label class="store-form__item store-form__item_box" for="feature-slider">Слайдер</label>
+						</li>
+						<li class="store-form__line">
+							<input class="store-form__input" type="checkbox" name="features" id="feature-advantage">
+							<label class="store-form__item store-form__item_box" for="feature-advantage">Блок преимуществ</label>
+						</li>
+						<li class="store-form__line">
+							<input class="store-form__input" type="checkbox" name="features" id="feature-news" checked>
+							<label class="store-form__item store-form__item_box" for="feature-news">Новости</label>
+						</li>
+						<li class="store-form__line">
+							<input class="store-form__input" type="checkbox" name="features" id="feature-gallery">
+							<label class="store-form__item store-form__item_box" for="feature-gallery">Галерея</label>
+						</li>
+						<li class="store-form__line">
+							<input class="store-form__input" type="checkbox" name="features" id="feature-basket">
+							<label class="store-form__item store-form__item_box" for="feature-basket">Корзина</label>
+						</li>
+					</ul>	
+				</form>
+			</div>
+			<div class="store__content">
+				<div class="store__sort sort">
+					<span class="sort__title">СОРТИРОВАТЬ:</span>
+					<a href="" class="sort__link">ПО ЦЕНЕ</a>
+					<a href="" class="sort__link sort__link_active">ПО ТИПУ</a>
+					<a href="" class="sort__link">ПО ФУНКЦИОНАЛУ</a>
+					<span href="" class="sort__up"></span>
+					<spam href="" class="sort__down sort__down_active"></span>
+				</div>
+				<div class="store__catalog clearfix">
+					<div class="store__item goods">
+						<a href="" class="goods__link">
+							<i class="goods__head-dots"></i>
+							<img src="img/maket-1.jpg" width="240" height="240" alt="" class="goods__img">
+						</a>
+						<div class="goods__hidden">
+							<h2 class="goods__title">Sunset</h2>
+							<span class="goods__review">Интернет-магазин с личным кабинетом</span>
+							<a href="" class="goods__btn button">10 000 Р.</a>
+						</div>	
+					</div>
+					<div class="store__item goods">
+						<a href="" class="goods__link">
+							<i class="goods__head-dots"></i>
+							<img src="img/maket-2.jpg" width="240" height="240" alt="" class="goods__img">
+						</a>	
+						<div class="goods__hidden">
+							<h2 class="goods__title">Sunset</h2>
+							<span class="goods__review">Интернет-магазин с личным кабинетом</span>
+							<a href="" class="goods__btn button">10 000 Р.</a>
+						</div>
+					</div>
+					<div class="store__item goods">
+						<a href="" class="goods__link">
+							<i class="goods__head-dots"></i>
+							<img src="img/maket-3.jpg" width="240" height="240" alt="" class="goods__img">
+						</a>	
+						<div class="goods__hidden">
+							<h2 class="goods__title">Sunset</h2>
+							<span class="goods__review">Интернет-магазин с личным кабинетом</span>
+							<a href="" class="goods__btn button">10 000 Р.</a>
+						</div>	
+					</div>
+					<div class="store__item goods">
+						<a href="" class="goods__link">
+							<i class="goods__head-dots"></i>
+							<img src="img/maket-4.jpg" width="240" height="240" alt="" class="goods__img">
+						</a>	
+						<div class="goods__hidden">
+							<h2 class="goods__title">Sunset</h2>
+							<span class="goods__review">Интернет-магазин с личным кабинетом</span>
+							<a href="" class="goods__btn button">10 000 Р.</a>
+						</div>
+					</div>
+					<div class="store__item goods">
+						<a href="" class="goods__link">
+							<i class="goods__head-dots"></i>
+							<img src="img/maket-5.jpg" width="240" height="240" alt="" class="goods__img">
+						</a>	
+						<div class="goods__hidden">
+							<h2 class="goods__title">Sunset</h2>
+							<span class="goods__review">Интернет-магазин с личным кабинетом</span>
+							<a href="" class="goods__btn button">10 000 Р.</a>
+						</div>
+					</div>
+					<div class="store__item goods">
+						<a href="" class="goods__link">
+							<i class="goods__head-dots"></i>
+							<img src="img/maket-6.jpg" width="240" height="240" alt="" class="goods__img">
+						</a>	
+						<div class="goods__hidden">
+							<h2 class="goods__title">Sunset</h2>
+							<span class="goods__review">Интернет-магазин с личным кабинетом</span>
+							<a href="" class="goods__btn button">10 000 Р.</a>
+						</div>
+					</div>
+				</div>
+				<div class="store__bottom-nav pagination">
+					<ul class="pagination__list">
+						<li class="pagination__item"><a href="" class="pagination__link pagination__link_current">1</a></li>
+						<li class="pagination__item"><a href="" class="pagination__link">2</a></li>
+						<li class="pagination__item"><a href="" class="pagination__link">3</a></li>
+						<li class="pagination__item"><a href="" class="pagination__link pagination__link_next">Cледующая</a></li>
+					</ul>
+				</div>
+			</div> 
+		</div>
+	</div>	
+	<footer class="page-footer">
+		<div class="page-footer__map" id="krasnodar-map" >
+		</div>		
+		<div class="page-footer__friends clearfix">
+			<div class=" page-footer__list social">
+				<a href="" class="social__item"><span class="icon-vk social__icon"></a>
+				<a href="" class="social__item"><span class="icon-facebook social__icon"></a>
+				<a href="" class="social__item"><span class="icon-instagramm social__icon"></a>
+			</div>
+			<div class="page-footer__text">
+				<h2 class="page-footer__title">Давайте дружить, это выгодно!</h2>
+				<span>Скидка 10% для друзей из социальных сетей.</span>
+			</div>
+			<article class="contact location-card">
+			<h1 class="location-card__title"><b>NЁRDS</b> DESIGN STUDIO</h1>
+			<address class="location-card__address">350000, Краснодар, ул. Головатого, 100
+				<span class="location-card__tel">тел. +7 (861) 275-75-75
+				</span>
+			</address>
+			<a href="" class="location-card__btn button">НАПИШИТЕ НАМ</a>
+		</article>		
+		</div>
+	</footer>
+	<div class="modal-contact">
+		<form action="" class="modal-contact__form">
+			<div class="modal-contact__entry-block clearfix">
+				<label class="modal-contact__label" for="name">Ваше имя:<br>
+					<input class="modal-contact__input" type="text" name="" id="name" placeholder="Предствьтесь, пожалуйста">
+				</label>
+				<label class="modal-contact__label for="email">Ваш e-mail:</label><br>
+					<input class="modal-contact__input" type="text" name="" id="email" placeholder="Для отправки ответа">
+				</label>
+				<label class="modal-contact__label" for="message">Текст письма:<br>
+					<textarea class="modal-contact__input_textarea modal-contact__input" name="" id="message" cols="30" rows="10" placeholder="В свободной форме" wrap="virtual"></textarea>
+				</label>
+			</div>
+			<button type="submit" class="modal-content__btn button">ОТПРАВИТЬ</button>
+			<button type="submit" class="modal-content__btn button modal-content__btn_white">отмена</button>
+		</form>
+	</div>	
+  </body>
+</html>
