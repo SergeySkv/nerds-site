@@ -10,16 +10,16 @@
   <body class="page">
 	<header class="page-header">
 		<div class="page-header__wrap">
-			<div class="page-header__nav clearfix">
+			<div class="page-header__head clearfix">
 				<a href="nerds-index.html" class="page-header__logo"><img src="img/logo.png"width="139" height="56"  alt="Nerds Logo"></a>
-				<nav class="nav">
+				<nav class="page-header__nav nav clearfix">
 					<ul class="nav__list">
-						<li class="nav__item"><a href="nerds-index.html" class="nav__link">студия</a></li>
-						<li class="nav__item"><a href="nerds-index.html" class="nav__link">клиенты</a></li>
-						<li class="nav__item"><a href="nerds-catalog.html" class="nav__link nav__link_current">магазин</a></li>
-						<li class="nav__item"><a href="nerds-index.html" class="nav__link">контакты</a></li>
-						<li class="nav__item"><a href="nerds-index.html" class="nav__link cart"><i class="cart__img icon-basket"></i>корзина</a></li>
+						<li class="nav__item"><a href="nerds-index.html" class="nav__link nav__link_current">студия</a></li>
+						<li class="nav__item"><a href="nerds-catalog.html" class="nav__link">клиенты</a></li>
+						<li class="nav__item"><a href="nerds-catalog.html" class="nav__link">магазин</a></li>
+						<li class="nav__item"><a href="nerds-catalog.html" class="nav__link">контакты</a></li>
 					</ul>
+					<a href="nerds-catalog.html" class="nav__link cart"><i class="cart__icon icon-basket"></i>корзина</a>
 				</nav>	
 			</div>
 			<h1 class="page-header__title">Добро пожаловать в магазин<br> готовых макетов</h1>
@@ -28,13 +28,18 @@
 	<div class="store clearfix">
 		<div class="store__wrap">
 			<div class="store__tuning">
-				<form action="" class="store-form">
+				<form action="text.txt" class="store-form" method="get">
 					<h2 class="store-form__title">СТОИМОСТЬ:</h2>
-					<div class="price-scrollbar">
-						<div class="price-scrollbar__scroll">
+					<div class="price-range">
+						<div class="price-range__slider slider">
+							<div class="slider__line">
+								<div class="slider__item slider__item_left"></div>
+								<div class="slider__item slider__item_right"></div>
+								<div class="slider__line-between"></div>
+							</div>
 						</div>
-						<label class="price-scrollbar__item" for="min-price">ОТ<input class="price-scrollbar__input" type="text" name="" id="min-price"></label>
-						<label class="price-scrollbar__item" for="max-price">ДО<input class="price-scrollbar__input price-scrollbar__input_last" type="text" name="" id="max-price"></label>
+						<label class="price-range__item" for="min-price">ОТ<input class="price-range__input" type="text" name="" id="min-price" value="0"></label>
+						<label class="price-range__item" for="max-price">ДО<input class="price-range__input price-range__input_last" type="text" name="" id="max-price" value="15000"></label>
 					</div>
 					<h2 class="store-form__title">Сетка:</h2>
 					<ul class="store-form__list">
@@ -183,11 +188,12 @@
 				<span class="location-card__tel">тел. +7 (861) 275-75-75
 				</span>
 			</address>
-			<a href="" class="location-card__btn button">НАПИШИТЕ НАМ</a>
+			<button type="button" class="location-card__btn button" onclick="document.getElementById('modal-window').style.display = 'block'">НАПИШИТЕ НАМ</button> 
 		</article>		
 		</div>
+
 	</footer>
-	<div class="modal-contact">
+	<div class="modal-contact" id="modal-window">
 		<form action="" class="modal-contact__form">
 			<div class="modal-contact__entry-block clearfix">
 				<label class="modal-contact__label" for="name">Ваше имя:<br>
@@ -201,7 +207,7 @@
 				</label>
 			</div>
 			<button type="submit" class="modal-content__btn button">ОТПРАВИТЬ</button>
-			<button type="submit" class="modal-content__btn button modal-content__btn_white">отмена</button>
+			<button type="button" class="modal-content__btn button modal-content__btn_white" onclick="document.getElementById('modal-window').style.display = 'none'">отмена</button>
 		</form>
 	</div>	
   </body>
